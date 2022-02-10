@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_label"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/blue_500">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Label"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@color/blue_500"
+                    android:src="@drawable/ic_baseline_delete_18"
+                    app:tint="@color/white"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ap1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_ap1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Access Point 1"
+                android:textColor="@color/hitam" />
+
+            <TextView
+                android:id="@+id/tv_ap1_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_toStartOf="@id/tv_ap1_dbm"
+                android:text="- 70"
+                android:textColor="@color/hitam_2" />
+
+            <TextView
+                android:id="@+id/tv_ap1_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" dBm"
+                android:textColor="@color/hitam_2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_ap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ap1"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_ap2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Access Point 2"
+                android:textColor="@color/hitam" />
+
+            <TextView
+                android:id="@+id/tv_ap2_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_toStartOf="@id/tv_ap2_dbm"
+                android:text="- 70"
+                android:textColor="@color/hitam_2" />
+
+            <TextView
+                android:id="@+id/tv_ap2_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" dBm"
+                android:textColor="@color/hitam_2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_ap3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ap2"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_ap3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Access Point 3"
+                android:textColor="@color/hitam" />
+
+            <TextView
+                android:id="@+id/tv_ap3_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_toStartOf="@id/tv_ap3_dbm"
+                android:text="- 70"
+                android:textColor="@color/hitam_2" />
+
+            <TextView
+                android:id="@+id/tv_ap3_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" dBm"
+                android:textColor="@color/hitam_2" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_creation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ap3"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="creation time"
+            android:textColor="#909090"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
